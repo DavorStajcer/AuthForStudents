@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logInFragment">
+
+
+    <fragment android:id="@+id/logInFragment"
+        android:name="logIn.LogInFragment">
+        <action android:id="@+id/openSingUp" app:destination="@id/signUpFragment"/>
+    </fragment>
+    <fragment android:id="@+id/signUpFragment"
+        android:name="signUp.SingUpFragment">
+        <action android:id="@+id/openLogIn" app:destination="@id/logInFragment"/>
+    </fragment>
+
+</navigation>
